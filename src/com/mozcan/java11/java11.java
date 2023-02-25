@@ -5,20 +5,31 @@ import java.util.stream.Collectors;
 
 public class java11 {
     public static void main(String[] args) {
-        // New methods are added to the String class like 'lines','strip','isBlank',...
 
+        // Running Java File with single command
+
+        /*
+        One major change is that you don’t need to compile the java source file with javac tool first.
+        You can directly run the file with java command and it implicitly compiles
+         */
+
+        System.out.println("-----------------------------------------------");
+
+        // New methods are added to the String class like 'lines','strip','isBlank',...
         String multilineString = "Java is a \n \n great \n programming language.";
         List<String> lines = multilineString.lines()
                 .filter(line -> !line.isBlank())
                 .map(String::strip)
                 .collect(Collectors.toList());
-        /*
-            Java is a
-            great
-            programming language.
-        */
 
-        /* -----------------------------------------------------*/
+        /*
+        strip() is “Unicode-aware” evolution of trim().
+        When trim() was introduced, Unicode wasn’t evolved. Now, the new strip() removes all kinds of whitespaces leading
+         */
+
+        System.out.println(lines);
+
+        System.out.println("-----------------------------------------------");
 
         /*
         Path filePath = Files.writeString(Files.createTempFile("C:\\Users\\admin\\IdeaProjects\\javaVersions\\src\\com\\mozcan\\java11", "demo", ".txt"), "Sample text");
@@ -29,5 +40,10 @@ public class java11 {
         }
 
          */
+
+
+        System.out.println("-----------------------------------------------");
+
+        //  Local-Variable Syntax for Lambda Parameters
     }
 }
