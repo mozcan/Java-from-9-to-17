@@ -6,7 +6,8 @@ import java.util.stream.Collectors;
 
 public class java10 {
     public static void main(String[] args) {
-        // var can be used as local variable
+
+        System.out.println("var can be used as local variable");
 
         var text = "Mustafa";
         var number = 32;
@@ -20,7 +21,7 @@ public class java10 {
 
         System.out.println("-----------------------------------------------");
 
-        // New methods are added in List,Map and Set
+        System.out.println("New methods are added in List,Map and Set");
 
         List<Integer> list = List.of(28, 29, 30);
         List<Integer> newList = list.stream().filter(item -> item % 2 == 0).collect(Collectors.toUnmodifiableList());
@@ -32,12 +33,9 @@ public class java10 {
 
         System.out.println("-----------------------------------------------");
 
-        // Java 10 Performance Improvements
+        System.out.println("Java 10 Performance Improvements\n");
 
-        /*
-            Parallel Full GC for G1
-            Application Class-Data Sharing
-            Experimental Java-Based JIT Compiler
-         */
+        System.out.println("Parallel Full GC for G1 \nApplication Class-Data Sharing \nExperimental Java-Based JIT Compiler");
+
     }
 }

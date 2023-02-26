@@ -11,12 +11,15 @@ import java.util.stream.Stream;
 public class java9 {
 
     public static void main(String[] args) {
+        System.out.println("Private Method in Interface");
+
         Writable writeObj = new IWritable();
         writeObj.write();
 
         System.out.println("-----------------------------------------------");
 
-        // takeWhile, dropWhile have been added in Stream
+        System.out.println("takeWhile, dropWhile have been added in Stream");
+
         Stream<Integer> streamTake = Stream.of(4,8,12,23,31,40,41);
         Stream<String> streamDrop = Stream.of("Ali", "Ahmet", "Mustafa", "Kemal", "Atatürk");
 
@@ -31,7 +34,8 @@ public class java9 {
 
         System.out.println("-----------------------------------------------");
 
-        // ofNullable has been added
+
+        System.out.println("ofNullable has been added");
 
         // Before Java 9 version - NullPointerException
         /**
@@ -45,7 +49,7 @@ public class java9 {
 
         System.out.println("-----------------------------------------------");
 
-        // Collection Factory Method
+        System.out.println("Collection Factory Method");
 
         // Before Java 9
         List<Integer> intListBefore9 = new ArrayList<>();
@@ -58,8 +62,7 @@ public class java9 {
 
         System.out.println("-----------------------------------------------");
 
-
-        // FLOW API
+        System.out.println("FLOW API");
 
         SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
         EndSubscriber<String> subscriber = new EndSubscriber<>();
@@ -79,8 +82,7 @@ public class java9 {
 
         System.out.println("-----------------------------------------------");
 
-
-        // Inner Class Diamond Operator
+        System.out.println("Inner Class Diamond Operator");
 
         // This is before Java 7. We have to explicitly mention generic type
         // in the right side as well.
