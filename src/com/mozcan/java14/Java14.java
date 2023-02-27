@@ -1,6 +1,6 @@
 package com.mozcan.java14;
 
-public class java14 {
+public class Java14 {
     public static void main(String[] args) {
 
         System.out.println("Helpful NullPointerExceptions");

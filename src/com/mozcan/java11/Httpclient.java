@@ -8,7 +8,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
 
-public class httpclient {
+public class Httpclient {
 
     private static final HttpClient httpclient = HttpClient.newBuilder()
             .version(HttpClient.Version.HTTP_1_1)

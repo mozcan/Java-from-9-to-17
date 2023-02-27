@@ -1,14 +1,12 @@
 package com.mozcan.java9;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Flow;
 import java.util.concurrent.SubmissionPublisher;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class java9 {
+public class Java9 {
 
     public static void main(String[] args) {
         System.out.println("Private Method in Interface");

@@ -1,6 +1,6 @@
 package com.mozcan.java13;
 
-public class java13 {
+public class Java13 {
 
     public static void main(String[] args) {
         System.out.println("Yield in switch expression.Break replace with yield in java 13");

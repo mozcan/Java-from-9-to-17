@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 
-public class java10 {
+public class Java10 {
     public static void main(String[] args) {
 
         System.out.println("var can be used as local variable");

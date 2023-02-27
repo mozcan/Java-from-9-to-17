@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.summingDouble;
 
-public class java12 {
+public class Java12 {
 
     public static void main(String[] args) {
         System.out.println("Pattern Matching for instanceof");
