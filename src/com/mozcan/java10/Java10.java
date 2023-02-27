@@ -17,7 +17,14 @@ public class Java10 {
 
         //var c; It can not use without initializer
         //var list = null; Null and var can not use together
+        System.out.println("""
+                When you declare a variable with the keyword var, it's just a shortcut for writing. 
+                At the compilation, the keyword will be replace by the type of this variable. 
+                In order to know what is the type of the variable, the initialization must be explicit. 
+                If you initialise your variable with null, the compiler can't know what is the type of the variable and so can't replace var
+                """);
         //public var number = 32; var can only be used as local variable
+
 
         System.out.println("-----------------------------------------------");
 

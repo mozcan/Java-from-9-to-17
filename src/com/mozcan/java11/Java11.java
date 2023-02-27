@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class java11 {
+public class Java11 {
     public static void main(String[] args) throws IOException {
 
         System.out.println("Running Java File with single command\n");
